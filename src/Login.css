@@ -1,0 +1,143 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} */
+
+.container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+#image{
+    height: 150px;
+    width: auto;
+}
+.company-details {
+  background-color: #3f51b5; /* Blue color */
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.company-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.company-details p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #3f51b5, #ffffff); /* Linear gradient from blue to white */
+}
+
+.form-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-card h2 {
+    color: black;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: rgb(126, 126, 133);
+  text-align: left;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3f51b5; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #283593; /* Darker shade of blue on hover */
+}
+
+.form-toggle {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #3f51b5; /* Blue color */
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.toggle-btn:hover {
+  color: #283593; /* Darker shade of blue on hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .company-details,
+  .form-container {
+    width: 100%;
+  }
+
+  .company-details {
+    padding: 1rem;
+  }
+
+  .company-details h1 {
+    font-size: 2rem;
+  }
+
+  .company-details p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+} */

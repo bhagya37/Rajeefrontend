@@ -1,15 +1,9 @@
-import React from "react";
+import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './index.css'
-function Navbar (){
-    return(
-        <>
-        <div id="hero-img">
-    
-    <h1 id="p">Products By Rajlee Innovations Pvt Ltd</h1>
-    
-    </div>
+const Footer = () => {
+  return (
     <footer className="footer-container">
       <div className="footer-content">
         <h2>Rajlee Innovation Pvt Ltd</h2>
@@ -21,7 +15,8 @@ function Navbar (){
         </div>
       </div>
     </footer>
-        </>
-    )
+  );
 }
-export default Navbar
+
+export default Footer;
+
