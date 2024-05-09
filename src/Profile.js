@@ -1,13 +1,25 @@
-import React,{useContext} from 'react'
-import { globalContext } from './App'
- function Profile() {
-    const contextvalue= useContext(globalContext)
-  return (
-    <div>
-       <h1>Profilecomponent</h1>
-       <p>value ={contextvalue}</p>
-       <profile/>
-        </div>
+import React from 'react'
+import './Profile.css'
+import { BiUser } from 'react-icons/bi';
+function Profile(){
+  return(
+ <>
+ <div id='profile-container'>
+  <div className='header'><h1>Profile</h1></div>
+  <div className='user-details'>
+  <BiUser className='user-icon'/>
+  <h3>Web devloper</h3>
+  <div className='course-details'>
+   <p className='data'>Html</p>
+   <p className='data'>Css</p>
+   <p className='data'>Bootstrap</p>
+   <p className='data'>JavaScript</p>
+   <p className='data'>React Js</p>
+  </div>
+  </div>
+ </div>
+ </>
   )
 }
+
 export default Profile;

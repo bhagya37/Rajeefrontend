@@ -1,0 +1,30 @@
+#profile-container{
+   background: #dde6ed;
+ 
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+.user-icon{
+  font-size: 100px;
+  margin-top: 20px;
+}
+.course-details{
+   margin-top: 100px;
+}
+.data{
+   padding: 10px;
+   background:#ffffffc0 ;
+   border-radius: 10px;
+   transition: 0.5s ease-in-out;
+   width: 50%;
+  margin: auto  ;
+  margin-top: 20px;
+   
+}
+.data:hover{
+   
+      transform: scale(1.04);
+      cursor: pointer;
+
+}

@@ -1,6 +1,13 @@
-#p1{
-    color: blueviolet;
+.dashboard{
+    display: flex;
+    gap: 20px;
 }
-.head{
-    background-color: brown;
+.dashboard-content{
+ background:white;
+ flex: 1;
+ border-radius: 20px;
+ padding: 2rem;
+ display: flex;
+ gap: 1.5rem;
+ justify-content: space-between;
 }
