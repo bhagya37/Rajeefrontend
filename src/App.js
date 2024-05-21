@@ -7,17 +7,19 @@ import Contact from './Contact'
 import Singup from './Singup'
 import DetailsCard from "./DetailsCard";
 import './App.css'
+import Login from "./Login";
 
 function App(){
     return(
         <>
         <BrowserRouter>
         <div id="navbar"> 
-        <NavLink className="tag"   to='/' activeClassName="active" >Home</NavLink>
-         <NavLink className="tag" to='/About' activeClassName="active" >About</NavLink>
-         <NavLink className="tag" to='/JoinUS' activeClassName="active" >JoinUs</NavLink>
-         <NavLink  className="tag" to='/Contact' activeClassName="active" >Contact</NavLink>
-           <NavLink className="tag" to='/Singup'activeClassName="active" >Sing-up</NavLink>
+        <NavLink className="tag"   to='/'  >Home</NavLink>
+         <NavLink className="tag" to='/About'  >About</NavLink>
+         <NavLink className="tag" to='/JoinUS'  >JoinUs</NavLink>
+         <NavLink  className="tag" to='/Contact'  >Contact</NavLink>
+           <NavLink className="tag" to='/Singup' >Sing-up</NavLink>
+           {/* <NavLink className="tag" to='/Login'activeClassName="active"> Login</NavLink> */}
         </div>
         <Routes>
             <Route path = '/'  element={<Home/>}/>
@@ -25,6 +27,7 @@ function App(){
             <Route path='/Joinus' element={<JoinUs/>}  />
             <Route path='/Contact' element={<Contact/>}  />
             <Route  path='/Singup' element={<Singup/>}/>
+            <Route path="/Login" element={<Login/>}/>
             <Route path="/courses/:id" element={<DetailsCard/>}/>
            
         </Routes>

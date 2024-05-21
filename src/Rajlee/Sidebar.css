@@ -1,0 +1,35 @@
+body{
+    background-color: #d4d7de;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+    height: 94vh;
+  
+}
+.logo-icon{
+font-size: 1.4rem;
+}
+.menu-list{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.menu-list .item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #213e5b;
+}
+.menu-list .item:hover{
+    background-color: #1c2b3b;
+    color: #dde6ed;
+}
