@@ -9,6 +9,7 @@ import DetailsCard from "./DetailsCard";
 import './App.css'
 import Login from "./Login";
 import Dashboard from "./Dashboard";
+import Pagination from "./Pagination";
 
 function App(){
     return(
@@ -31,6 +32,7 @@ function App(){
             <Route path="/Login" element={<Login/>}/>
             <Route  path='/Dashboard' element={<Dashboard/>}/>
             <Route path="/courses/:id" element={<DetailsCard/>}/>
+            <Route path="/Pagination" element={<Pagination/>}/>
            
         </Routes>
         </BrowserRouter>

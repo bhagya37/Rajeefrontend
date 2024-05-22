@@ -72,6 +72,7 @@ function Login() {
     });
     const [error, setError] = useState('');
     const navigate = useNavigate();
+    const [isAdmin,setIsAdmin] = useState( '')
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -80,11 +81,14 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        const validEmail = "test@example.com";
-        const validPassword = "password123";
+        const validEmail = "rajlee@gmail.com";
+        const validPassword = "rajlee123";
+        const validAdminEmail = 'pankaj@gmail.com'
+        const validAdminPassword = "pankaj123"
 
-        if (formData.email === validEmail && formData.password === validPassword) {
-           
+        if (formData.email === validAdminEmail && formData.password === validAdminPassword) {
+            navigate('/Pagination');
+        } else if (formData.email === validEmail && formData.password === validPassword) {
             navigate("/Dashboard");
         } else {
             setError('Invalid credentials');
