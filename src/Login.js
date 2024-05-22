@@ -72,7 +72,7 @@ function Login() {
     });
     const [error, setError] = useState('');
     const navigate = useNavigate();
-    const [isAdmin,setIsAdmin] = useState( '')
+    // const [isAdmin,setIsAdmin] = useState( '')
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
