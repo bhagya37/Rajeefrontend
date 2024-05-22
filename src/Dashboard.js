@@ -2,8 +2,9 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
 import Profile from "./Profile";
-import './App.css'
-function App(){
+import './Dashboard.css'
+
+function Dashboard(){
   return(
     <>
     <div className="dashboard">
@@ -16,4 +17,4 @@ function App(){
     </>
   )
 }
-export default App;
+export default Dashboard;

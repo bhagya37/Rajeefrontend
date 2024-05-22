@@ -8,6 +8,7 @@ import Singup from './Singup'
 import DetailsCard from "./DetailsCard";
 import './App.css'
 import Login from "./Login";
+import Dashboard from "./Dashboard";
 
 function App(){
     return(
@@ -28,6 +29,7 @@ function App(){
             <Route path='/Contact' element={<Contact/>}  />
             <Route  path='/Singup' element={<Singup/>}/>
             <Route path="/Login" element={<Login/>}/>
+            <Route  path='/Dashboard' element={<Dashboard/>}/>
             <Route path="/courses/:id" element={<DetailsCard/>}/>
            
         </Routes>

@@ -1,48 +1,4 @@
-/* 
-Login.css
-.login-container {
-    background:linear-gradient(rgb(118, 118, 157),pink);
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .btn {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  } */
+
 .login-container{
     width: 50%;
     margin: auto;
@@ -67,7 +23,7 @@ Login.css
     margin-left: 0%;
 }
 @media (max-width: 1300px) {
-    #signup-container {
+    #login-container {
         width: 50%;
         margin-top: 100px;
     }
@@ -87,8 +43,8 @@ Login.css
     }
   }
   @media (max-width: 1100px) {
-    #signup-container {
-        width: 100%;
+    #login-container {
+        /* width: 100%; */
         margin-top: 100px;
     }
   
@@ -105,8 +61,8 @@ Login.css
     
   }
   @media (max-width: 480px) {
-    #signup-container {
-        width: 100%;
+    #login-container {
+        /* width: 100%; */
         margin-top: 80px;
     }
   
