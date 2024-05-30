@@ -1,13 +1,242 @@
-.dashboard{
+/* General styles */
+body {
+    background-color: #d4d7de;
+}
+
+.dashboard {
     display: flex;
+    flex-direction: column; 
     gap: 20px;
 }
-.dashboard-content{
- background:white;
- flex: 1;
- border-radius: 20px;
- padding: 2rem;
- display: flex;
- gap: 1.5rem;
- justify-content: space-between;
+
+.dashboard-content {
+    background: white;
+    flex: 1;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+/* Sidebar CSS */
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+    height: auto; 
+}
+
+.logo-icon {
+    font-size: 1.4rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-list .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #213e5b;
+}
+
+.menu-list .item:hover {
+    background-color: #1c2b3b;
+    color: #dde6ed;
+}
+
+/* Content CSS */
+.content {
+    width: 100%;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    color: #1d2f3c;
+    margin-left: 0; 
+}
+
+.header-activity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px; 
+}
+
+.search-box {
+    background-color: #dde6ed;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+}
+
+.search-box .icon {
+    color: #969393;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.notify .icon {
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.notify {
+    background: #dde6ed;
+    padding: 12px;
+    border-radius: 10px;
+    color: #969393;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    background: #dde6ed;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.card:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.card-title {
+    background: #ffffffc0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #526d82;
+    border-radius: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .dashboard-content {
+        flex-direction: row;
+    }
+
+    .content-header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-title {
+        margin-left: -70px;
+    }
+
+    .header-activity {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 33.33%;
+    }
+}
+@media (min-width: 450px) {
+    .dashboard-content {
+        flex-direction: row;
+    }
+
+    .content-header {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .header-title {
+        margin-left: 0; 
+    }
+
+    .header-activity {
+        margin-top: 0; 
+    }
+
+    .card-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        width: 48%; 
+    }
+}
+
+@media (min-width: 980px) {
+    .dashboard {
+        flex-direction: row; 
+    }
+
+    .content {
+        width: 75%; 
+    }
+
+    .card-container {
+        flex-direction: row; 
+        gap: 20px;
+    }
+
+    .card {
+        width: 30%; 
+    }
 } 

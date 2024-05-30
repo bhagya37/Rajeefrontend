@@ -20,7 +20,7 @@ function App(){
          <NavLink className="tag" to='/About'  >About</NavLink>
          <NavLink className="tag" to='/JoinUS'  >JoinUs</NavLink>
          <NavLink  className="tag" to='/Contact'  >Contact</NavLink>
-           <NavLink className="tag" to='/Singup' >Sing-up</NavLink>
+           <NavLink className="tag" to='/Login' >Login</NavLink>
            {/* <NavLink className="tag" to='/Login'activeClassName="active"> Login</NavLink> */}
         </div>
         <Routes>

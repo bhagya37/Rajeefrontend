@@ -12,7 +12,7 @@ function Pagination() {
   const [uemail, setUemail] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
-  const recordsPerPage = 10;
+  const recordsPerPage = 5;
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = currentPage * recordsPerPage - recordsPerPage;
   const records = users.slice(firstIndex, lastIndex);
@@ -119,7 +119,7 @@ function Pagination() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button>Add</button>
+          <button className="page-link"> <b>Add</b></button>
         </form>
         {successMessage && <div>{successMessage}</div>}
       </div>
@@ -186,10 +186,10 @@ function Pagination() {
         <nav>
           <ul className="pagination">
             <button className="page-link1" onClick={prePage}>
-              <li>Prev</li>
+              <li><b>Prev</b></li>
             </button>
             <button className="page-link1" onClick={nextPage}>
-              <li>Next</li>
+              <li><b>Next</b></li>
             </button>
           </ul>
         </nav>

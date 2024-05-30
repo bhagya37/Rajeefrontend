@@ -1,5 +1,6 @@
 import React from "react";
-import './Sidebar.css'
+// import './Sidebar.css'
+import './Dashboard.css'
 import { BiHome ,BiRegistered,BiLogoDiscourse,BiBookmarks, BiLogOut} from "react-icons/bi";
 function Sidebar(){
     return(

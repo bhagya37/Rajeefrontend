@@ -1,6 +1,6 @@
 import React from "react";
-import './Content.css'
-
+// import './Content.css'
+import './Dashboard.css'
 function Card(){
     const courses = [
         {

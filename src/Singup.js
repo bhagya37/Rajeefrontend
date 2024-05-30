@@ -61,10 +61,10 @@ function Singup() {
                 <button className="btnlog" type="submit">SingUp</button>
             
             </form>
-            <div className="logindiv">
+            {/* <div className="logindiv">
             <h1>If Already Have Account?</h1>
            <Link to="/Login"> <button className="btnlog" type="submit">Login</button></Link>
-            </div>
+            </div> */}
            
         </>
     );
