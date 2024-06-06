@@ -70,9 +70,9 @@ function App(){
         <BrowserRouter>
             <div id="navbar" className={menuOpen ? "open" : ""}> 
                 <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span className="nav-icon"></span>
+                    <span className="nav-icon"></span>
+                    <span className="nav-icon"></span>
                 </div>
                 <NavLink className="tag" to='/'>Home</NavLink>
                 <NavLink className="tag" to='/About'>About</NavLink>
