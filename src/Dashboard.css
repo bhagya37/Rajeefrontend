@@ -222,7 +222,7 @@ body {
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1000px) {
     .dashboard {
         flex-direction: row; 
     }
@@ -240,3 +240,33 @@ body {
         width: 30%; 
     }
 } 
+@media (min-width: 900px) {
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .dashboard-content {
+        flex-direction: row;
+    }
+
+    .content-header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-title {
+        margin-left: -70px;
+    }
+
+    .header-activity {
+        margin-top: 0;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 33.33%;
+    }
+}
