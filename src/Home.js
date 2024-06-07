@@ -9,7 +9,7 @@ function Home(){
         <>
        <div id="home-page-img">
 <h1 id="head">LEARN NEW WAY TO SECURE A JOB</h1>
-<p id="p">With Webinars Provided By Rajalee Innovations Pvt Ltd</p>
+<p id="p">With Webinars Provided By Rajlee Innovations Pvt Ltd</p>
 </div>
  <Course/>
 <div id="course-start"><h1>Starts From 15th-May-2024</h1></div>
